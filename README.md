@@ -2,6 +2,9 @@ Eshaan Patel Bio
 
 Hi! I am a senior CS major. I was born in New York, but moved down to Alpharetta, Georgia in 2015. Currently I am enjoying this vr class a lot. I have unity experience, however I have never worked with vr games before, so in a lot of ways this is a very new experience
 
+Silvia Chen
+
+Hi! I’m Silvia Chen, this is my last semester in UGA. I enjoy turning creative ideas into interactive digital experiences and love the feeling of seeing my code come to life. Outside of coding, I enjoy flower arrangement, and playing PC games.
 
 
 
