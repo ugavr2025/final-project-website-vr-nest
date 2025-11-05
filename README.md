@@ -7,6 +7,7 @@ Silvia Chen
 Hi! I’m Silvia Chen, this is my last semester in UGA. I enjoy turning creative ideas into interactive digital experiences and love the feeling of seeing my code come to life. Outside of coding, I enjoy flower arrangement, and playing PC games.
 
 Tianhao Wu Bio
+
 I am a first-year Ph.D. student in CS. I got my Master's degree from the University of Tennessee. My research interests are Mobile sensing, LLMs (Large Language Models), and AI for smart fitness and health monitoring. And I am also interested in VR and games.
 
 Project Description:
