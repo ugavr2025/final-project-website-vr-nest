@@ -18,4 +18,4 @@ Project Description:
 Create a Museum with multiple exhibits. In each exhibit, the player learns about it via an NPC. On the way to each exhibit, there will be multiplayer challenges such as a puzzle or
 parkour to complete, each puzzle incorporating the theme of the next exhibit. 
 
-Github page: https://ugavr2025.github.io/final-project-website-vr-nest/
+Github page: [https://ugavr2025.github.io/final-project-website-vr-nest/](https://ugavr2025.github.io/final-project-website-vr-nest/index.html)
