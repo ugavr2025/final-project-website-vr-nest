@@ -1,15 +1,246 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Eshaan Patel</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>VR Nest | Final Project Showcase</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+	<style>
+		:root {
+			--primary-dark: #0b1f3a;
+			--primary-bright: #3a7bd5;
+			--accent: #f0f4ff;
+		}
+
+		body {
+			font-family: 'Roboto', sans-serif;
+			color: #1d1d1d;
+			line-height: 1.6;
+			background-color: #fafbff;
+		}
+
+		h1, h2, h3, h4, .navbar-brand {
+			font-family: 'Montserrat', sans-serif;
+		}
+
+		.navbar {
+			background-color: var(--primary-dark);
+			padding: 1rem 0;
+		}
+
+		.navbar-brand {
+			color: #fff !important;
+			font-weight: 700;
+			letter-spacing: 0.05em;
+		}
+
+		.nav-link {
+			color: rgba(255,255,255,0.8) !important;
+			font-weight: 500;
+			margin-left: 15px;
+		}
+
+		.nav-link:hover, .nav-link.active {
+			color: #fff !important;
+			text-decoration: underline;
+		}
+
+		.hero-section {
+			background: linear-gradient(135deg, rgba(11,31,58,0.9), rgba(58,123,213,0.85)), url('img/bg-grid.png');
+			background-size: cover;
+			background-position: center;
+			color: #fff;
+			padding: 90px 0;
+			text-align: center;
+		}
+
+		.hero-title {
+			font-size: 3.4rem;
+			font-weight: 700;
+			margin-bottom: 1rem;
+		}
+
+		.hero-subtitle {
+			font-size: 1.4rem;
+			font-weight: 300;
+			max-width: 800px;
+			margin: 0 auto 2rem auto;
+		}
+
+		.section-title {
+			color: var(--primary-dark);
+			border-bottom: 3px solid var(--primary-bright);
+			display: inline-block;
+			padding-bottom: 10px;
+			margin-bottom: 30px;
+			margin-top: 40px;
+		}
+
+		.card-feature, .bio-card {
+			background-color: #fff;
+			border: 1px solid #e4e8f2;
+			border-radius: 12px;
+			padding: 24px;
+			height: 100%;
+			box-shadow: 0 6px 18px rgba(11,31,58,0.08);
+			transition: transform 0.2s ease, box-shadow 0.2s ease;
+		}
+
+		.card-feature:hover, .bio-card:hover {
+			transform: translateY(-6px);
+			box-shadow: 0 12px 24px rgba(11,31,58,0.15);
+		}
+
+		.card-feature h4 {
+			color: var(--primary-bright);
+			font-weight: 600;
+		}
+
+		.bio-name {
+			font-size: 1.25rem;
+			font-weight: 600;
+			color: var(--primary-dark);
+			margin-bottom: 0.4rem;
+		}
+
+		.cta-panel {
+			background-color: var(--accent);
+			border-radius: 16px;
+			padding: 30px;
+			border-left: 5px solid var(--primary-bright);
+		}
+
+		footer {
+			background-color: #fff;
+			padding: 40px 0;
+			text-align: center;
+			border-top: 1px solid #e6eaf5;
+			margin-top: 60px;
+		}
+	</style>
 </head>
 <body>
-Eshaan Patel<br>
-Hi! I am a senior CS major. I was born in New York, but moved down to Alpharetta, Georgia in 2015. Currently I am enjoying this vr class a lot. I have unity experience, however I have never worked with vr games before, so in a lot of ways this is a very new experience. Looking forward to the next of the semester!
-Nash Carroll<br>
-<br><br>Hi! I am a First-year Master's CS sttudent. I was born in Gainesville, Georgia. I am hoping to do research with VR applications so this class has been an excellent gateway to obtaining a better understanding of Unity.
-<br><br>Project Description:<br><br>Create a Museum with multiple exhibits. In each exhibit, the player learns about it via an NPC. On the way to each exhibit, there will be multiplayer challenges such as a puzzle or parkour to complete, each puzzle incorporating the theme of the next exhibit.
+
+	<nav class="navbar navbar-expand-lg sticky-top">
+		<div class="container">
+			<a class="navbar-brand" href="#home">VR Nest</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+				<span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item"><a class="nav-link active" href="#home">Overview</a></li>
+					<li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+					<li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+					<li class="nav-item"><a class="nav-link" href="#links">Links</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<header class="hero-section" id="home">
+		<div class="container">
+			<p class="text-uppercase mb-3" style="letter-spacing: 0.4em; font-weight: 600;">UGA VR Final Project</p>
+			<h1 class="hero-title">VR Nest: Multiplayer Museum Adventure</h1>
+			<p class="hero-subtitle">
+				Build a living museum with themed exhibits, conversational NPCs, and cooperative scavenger hunts that prime players for each gallery. Every hallway teaches, every hidden clue foreshadows, and every exhibit celebrates interactive storytelling in full 3D.
+			</p>
+			<span class="badge bg-light text-dark px-4 py-3 me-2" style="font-size: 1rem;">Unity + VR • 2025</span>
+			<span class="badge bg-info px-4 py-3" style="font-size: 1rem;">Multiplayer | Scavenger Hunt | 3D Sculptures</span>
+		</div>
+	</header>
+
+	<main class="container my-5">
+		<section id="project">
+			<h2 class="section-title">Project Description</h2>
+			<p>
+				VR Nest creates a museum where every wing blends narrative discovery with collaborative scavenger hunts. Players travel together through curated corridors, meeting NPC docents who explain exhibit themes while planting the clues that guide teams toward the next sculpture hall. On the way, teammates search for artifacts, translate environmental cues, and unlock diegetic waypoints that echo the story of the destination gallery.
+			</p>
+			<p>
+				Each exhibit spotlights a fully 3D object or installation—kinetic sculptures, spatial sound totems, or interactive relics—so visitors engage with depth, scale, and material. The experience doubles as a sandbox for experimenting with AI-driven narration, smart sensing hooks, and accessibility-friendly guidance tuned for cooperative VR play.
+			</p>
+		</section>
+
+		<section id="experience">
+			<h2 class="section-title">Experience Highlights</h2>
+			<div class="row g-4">
+				<div class="col-md-6 col-lg-3">
+					<div class="card-feature">
+						<h4>Story-Rich NPCs</h4>
+						<p>Custom docents deliver lore, tips, and foreshadowing, keeping the museum cohesive while giving every player a reason to listen before rushing ahead.</p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3">
+					<div class="card-feature">
+						<h4>Co-op Scavenger Hunts</h4>
+						<p>Layered clue chains send teams across the museum floor plan, rewarding observation, note sharing, and synchronous problem solving.</p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3">
+					<div class="card-feature">
+						<h4>3D Sculpture Focus</h4>
+						<p>Every hunt culminates with a hero asset—interactive sculptures and spatial installations that showcase material detail and depth cues.</p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3">
+					<div class="card-feature">
+						<h4>Research Sandbox</h4>
+						<p>Supports experimentation with LLM-driven dialog, mobile sensing inputs, and smart fitness insights inside shared VR spaces.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="team">
+			<h2 class="section-title">Meet the Team</h2>
+			<div class="row g-4">
+				<div class="col-md-6">
+					<div class="bio-card h-100">
+						<p class="bio-name">Eshaan Patel</p>
+						<p>Hi! I am a senior CS major. I was born in New York but moved down to Alpharetta, Georgia in 2015. Currently, I am enjoying this VR class a lot. I have Unity experience; however, I have never worked with VR games before, so in many ways this is a very new experience. Looking forward to the rest of the semester!</p>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="bio-card h-100">
+						<p class="bio-name">Silvia Chen</p>
+						<p>Hi! I’m Silvia Chen, finishing my last semester at UGA. I love turning creative ideas into interactive digital experiences and seeing my code come to life. Outside of coding, I enjoy flower arrangement and PC gaming.</p>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="bio-card h-100">
+						<p class="bio-name">Tianhao Wu</p>
+						<p>I am a first-year CS Ph.D. student and earned my Master's from the University of Tennessee. My research spans mobile sensing, large language models, and AI for smart fitness and health monitoring. I am also deeply interested in VR and games.</p>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="bio-card h-100">
+						<p class="bio-name">Nash Carroll</p>
+						<p>Hi! I am a first-year CS Master's student from Gainesville, Georgia. I hope to conduct research on VR applications, and this class is the perfect gateway to deepen my Unity skills and VR design intuition.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="links">
+			<h2 class="section-title">Project Links</h2>
+			<div class="cta-panel d-flex flex-column flex-md-row align-items-md-center justify-content-between">
+				<div>
+					<h4 class="mb-2" style="color: var(--primary-dark);">Follow our Build Log</h4>
+					<p class="mb-0">Weekly updates, screenshots, and playtest notes live on our GitHub Pages site.</p>
+				</div>
+				<a class="btn btn-primary mt-3 mt-md-0" style="background-color: var(--primary-bright); border:none;" href="https://ugavr2025.github.io/final-project-website-vr-nest/" target="_blank" rel="noopener">Visit GitHub Page</a>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<div class="container">
+			<p class="mb-1"><strong>VR Nest</strong> • Museum-inspired VR final project • University of Georgia</p>
+			<p class="mb-0" style="font-size: 0.9rem;">Crafted by Eshaan Patel, Silvia Chen, Tianhao Wu, and Nash Carroll | 2025</p>
+		</div>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
