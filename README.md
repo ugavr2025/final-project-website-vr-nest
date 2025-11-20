@@ -11,7 +11,7 @@ Tianhao Wu Bio
 I am a first-year Ph.D. student in CS. I got my Master's degree from the University of Tennessee. My research interests are Mobile sensing, LLMs (Large Language Models), and AI for smart fitness and health monitoring. And I am also interested in VR and games.
 
 Nash Carroll
-Hi! I am a First-year Master's CS sttudent. I was born in Gainesville, Georgia. I am hoping to do research with VR applications so this class has been an excellent gateway to obtaining a better understanding of Unity.
+Hi! I am a First-year Master's CS student. I am from Jefferson, Georgia, and I  hope to do research with VR applications so this class has been an excellent gateway to obtaining a better understanding of Unity.
 
 Project Description:
 
